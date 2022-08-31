@@ -85,6 +85,11 @@
             const minuteDegree = ((minute / 60) * 360) + 90
             const secondDegree = ((second / 60) * 360) + 90
 
+            // It's like a persentase. Mainly it is 10 or 15 or 20 of 12 60 of 360
+            // hourDegree = 360 * hour / 12
+            // minuteDegree = 360 * minute / 60
+            // secondDegree = 360 * second /60
+
             hourElement.style.transform = `rotate(${hourDegree}deg)`
             minuteElement.style.transform = `rotate(${minuteDegree}deg)`
             secondElement.style.transform = `rotate(${secondDegree}deg)`
